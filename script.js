@@ -9,7 +9,6 @@
         dpi: 300, // Set to 300 DPI
         scale: 1 // Adjusts your resolution
       }).then((canvas,index) => {
-        pdf.text('test'+ index);
         pdf.addImage(canvas.toDataURL("images/jpeg", 1), 'JPEG', 0, position, 210, 295);
   
         if (i == len) {
